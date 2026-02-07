@@ -1,0 +1,29 @@
+
+
+https://192.168.1.66:7000
+
+https://github.com/LizardByte/Sunshine/releases
+
+Attatched is for my quick setup of a game downloader in android!! 
+Included in reinstall.sh!
+IT Streams your Android Emulator To One Of Your New Phones Without SD!
+
+chmod +x reinstall.sh
+./reinstall.sh
+
+In path of .sh
+
+cd ~
+wget https://github.com/LizardByte/Sunshine/releases/latest/download/sunshine.AppImage
+
+git clone git@github.com:RobLoach/lutris-kodi-addon.git ~/.kodi/addons/plugin.lutris
+cd ~/.kodi/addons/plugin.lutris
+git status
+
+# Allow Kodi to launch external apps (like RetroArch)
+flatpak override tv.kodi.Kodi --talk-name=org.freedesktop.Flatpak
+
+# Allow Lutris to see and run other Flatpaks
+flatpak override net.lutris.Lutris --talk-name=org.freedesktop.Flatpak
+
+reinstall_amd.sh - Open with text editor run with copy paste in sections and it will work!
